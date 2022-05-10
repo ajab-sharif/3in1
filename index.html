@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Background Color</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- display section -->
+        <section class="section">
+            <div class="section-header">
+                <h3 class="section-title">Display Color</h3>
+                <button class="section-header-action" id="generate-random-color">
+                    Random Color
+                </button>
+            </div>
+            <div class="divider"></div>
+            <div class="color-display" id="color-display"></div>
+        </section>
+
+        <!-- Change & Copy Color -->
+        <section class="section">
+            <section class="section-header">
+                <h3 class="section-title">Change & Copy Color</h3>
+                <div>
+                </div>
+            </section>
+            <div class="divider"></div>
+            <div class="select-copy-mode">
+                <p class="lead">Select Copy Mode</p>
+                <div class="mode-radio-group">
+                    <div class="mode-input-group">
+                        <input type="radio" name="color-mode" id="color-mode-hex" value="hex" checked />
+                        <label for="color-mode-hex">Hex</label>
+                    </div>
+                </div>
+            </div>
+            <div class="selected-color-code">
+                <div class="hex-input-group">
+                    <label for="input-hex" class="lead">Hex</label>
+                    <input type="text" disabled value="dddeee" placeholder="dddeee" id="input-hex"
+                        class="text-input hex-input" />
+                    <div class="hex-icon">#</div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <script src="app.js" defer></script>
+
+</body>
+
+</html>
